@@ -1,16 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Counter from './components/Counter'
-
+import Exam1 from './components/Exam1'
+import Exam2 from './components/Exam2'
+import Exam3 from './components/Exam3'
 function App() {
-  const [count, setCount] = useState(0)
+
+  const user={
+    name:'Alice',
+    age:21
+  }
 
   return (
-    <>
-     <Counter />
-    </>
+    <div>
+      <Exam1 {...user}/>
+      <Exam2/>
+      <Exam3/>
+    </div>
   )
 }
 
