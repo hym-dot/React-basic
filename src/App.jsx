@@ -1,6 +1,6 @@
 import './App.css'
-import MyComponent from './components/MyComponent'
-import MyProvider from './context/MyProvider'
+import Buttons from './components/Buttons'
+import Display from './components/Display'
 
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div>
-<MyComponent />
-<MyProvider />
+<Buttons />
+<Display />
     </div>
 
   )
