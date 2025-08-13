@@ -1,8 +1,16 @@
 import React, { useState, useContext } from 'react'
+import { MyContext } from '../context/MyContext'
 
 const MyComponent = () => {
+    const { value, setValue } = useContext(MyContext)
+
     return (
-        <div>MyComponent</div>
+        <div>
+            <p>{value}</p>
+            <button onClick={() => setValue("Update from Component")}>
+                update
+            </button>
+        </div>
     )
 }
 
